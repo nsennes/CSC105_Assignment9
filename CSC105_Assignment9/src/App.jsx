@@ -1,35 +1,102 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// import Card from './components/Card';
 
-function App() {
-  const [count, setCount] = useState(0)
+// function App(){
+//   return(
+//     <div className = "App">
+//       <Card header="This is title">
+//       <p>This is your children!</p>
+//       <ul>
+//         <li>hi!</li>
+//         <li>hi!</li>
+//         <li>hi!</li>
+//       </ul>
+//     </Card>
+//     </div>
+//   );
+// }
 
-  return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+// export default App;
+
+// import {useState} from "react";
+// import Text from "./components/Text";
+// 
+// const Colors = ["red", "green", "blue", "yellow"];
+// 
+// function App(){
+  // const [index, setIndex] = useState(0);
+// 
+  // function handleChangeColor(){
+    // if(index >= 3){
+      // setIndex(index%3);
+      // console.log(index);
+    // }else{
+      // setIndex(index+1);
+    // }
+  // }
+// 
+  // return(
+    // <div className="App">
+      {/* <button onClick ={handleChangeColor}>Change color</button> */}
+      {/* <Text text={"Your text is here"} color ={`${Colors[index]}`}/> */}
+    {/* </div> */}
+  // );
+// }
+// 
+// export default App;
+
+import React from 'react';
+import Card from "./components/Card";
+import List from './components/List';
+import TypeMe from './components/TypeMe';
+import MyForm from './components/MyForm';
+
+function App(){
+  return(
+    <div className='App'>
+      {/* <TypeMe/> */}
+      <MyForm/>
     </div>
   )
 }
+export default App;
 
-export default App
+// from List
+// const App = () => {
+  // const users = [
+    // {
+      // name: 'John Doe',
+      // job: 'Engineer',
+      // hobby: 'Listen to Music',
+    // },
+    // {
+      // name: 'John Doe',
+      // job: 'Engineer',
+      // hobby: 'Listen to Music',
+    // },
+    // {
+      // name: 'John Smith',
+      // job: 'Programmer',
+      // hobby: 'Running',
+    // },
+    // {
+      // name: 'John Roe',
+      // job: 'Farmer',
+      // hobby: 'Swimming',
+    // },
+  // ];
+// 
+  // return <List users={users} />;
+// 
+  // from Card
+  //return(
+  //(
+    // <div >
+   // {/* <Card name="John Doe" job="Engineer" hobby="Listen to Music"/> */}
+    
+   // </div>
+    
+ // );
+// }
+//  
+// export default App;
+
